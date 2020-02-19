@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+.leaflet-container {
+    height: calc(100vh - 57px);
+    width: 100%;
+  }
+
+.side-list {
+  height: calc(100vh - 117px);
+  overflow: hidden;
+  overflow-y: scroll;
+  .badge {
+    margin-left: .3rem;
+  }
+  .card {
+    margin-top: 0;
+    margin-bottom: -1px;
+    border-radius: 0;
+    .card-title {
+      cursor: pointer;
+      &:hover {
+        color: $primary
+      }
+    }
+  }
+}
